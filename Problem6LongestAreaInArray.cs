@@ -8,7 +8,7 @@ class Problem6LongestAreaInArray
     static void Main()
     {
         int n = int.Parse(Console.ReadLine());
-        int length = 0;
+        int lengthOfSeq = 0;
         string value = string.Empty;
         string[] elements = new string[n];
         for (int i = 0; i < elements.Length; i++)
@@ -29,14 +29,14 @@ class Problem6LongestAreaInArray
                     break;
                 }
             }
-            if (length < count)
+            if (lengthOfSeq < count)
             {
-                length = count;
+                lengthOfSeq = count;
                 value = elements[i];
             }
         }
-        Console.WriteLine(length);
-        for (int i = 0; i < length; i++)
+        Console.WriteLine(lengthOfSeq);
+        for (int i = 0; i < lengthOfSeq; i++)
         {
             Console.WriteLine(value);
         }
