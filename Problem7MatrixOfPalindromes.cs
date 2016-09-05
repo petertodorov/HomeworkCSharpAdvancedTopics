@@ -14,10 +14,10 @@ namespace Problem7MatrixOfPalindromes
             for (int row = 0; row < r; row++)
             {
                 for (int col = 0; col < c; col++)
-                {
-                    string a = Convert.ToString((char)('a' + row));
-                    string b = Convert.ToString((char)('a' + row + col));
-                    string d = Convert.ToString((char)('a' + row) + " ");
+                {   var temp = 'a' + row;
+                    string a = Convert.ToString((char)(temp));
+                    string b = Convert.ToString((char)(temp + col));
+                    string d = Convert.ToString((char)(temp) + " ");
                     Console.Write(Join(a, b, d));
                 }
                 Console.WriteLine();
