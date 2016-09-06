@@ -10,7 +10,8 @@ namespace Problem7MatrixOfPalindromes
     {
         static void Main(string[] args)
         {
-            int r = int.Parse(Console.ReadLine()); int c = int.Parse(Console.ReadLine());
+            int r = int.Parse(Console.ReadLine()); 
+            int c = int.Parse(Console.ReadLine());
             for (int row = 0; row < r; row++)
             {
                 for (int col = 0; col < c; col++)
