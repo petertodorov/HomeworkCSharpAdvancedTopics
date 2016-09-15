@@ -20,8 +20,8 @@ class Problem4DifferenceBetweenDates
         DateTime firstDate = DateTime.ParseExact(firstInput,format,CultureInfo.CurrentCulture);
         string secondInput = Console.ReadLine();
         DateTime secondDate = DateTime.ParseExact(secondInput, format, CultureInfo.CurrentCulture);
-        int days = (int)NumberOfDays(firstDate, secondDate);
-        Console.WriteLine(days);
+        int daysDiff = (int)NumberOfDays(firstDate, secondDate);
+        Console.WriteLine(daysDiff);
     }
     
 }
