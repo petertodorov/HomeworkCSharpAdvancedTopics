@@ -10,8 +10,8 @@ class Problem4DifferenceBetweenDates
     static double NumberOfDays(DateTime first, DateTime second)
     {
         TimeSpan difference = second - first;
-        int result = (int)difference.TotalDays;
-        return result;
+        int results = (int)difference.TotalDays;
+        return results;
     }
     static void Main()
     {
